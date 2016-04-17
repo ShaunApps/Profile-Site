@@ -1,3 +1,5 @@
+var React = require('react');
+
 class Profile extends React.Component {
   render() {
     var { name, age, bio, pic} = this.props;
