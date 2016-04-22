@@ -14,8 +14,6 @@ class Profile extends React.Component {
 
 }
 
-
-
 class ProjectsContainer extends React.Component {
   render() {
     var { name, image, link } = this.props;
