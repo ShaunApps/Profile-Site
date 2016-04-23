@@ -65,52 +65,56 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var Profile = function (_React$Component) {
-	  _inherits(Profile, _React$Component);
+	var App = function (_React$Component) {
+	  _inherits(App, _React$Component);
 	
-	  function Profile() {
-	    _classCallCheck(this, Profile);
+	  function App() {
+	    _classCallCheck(this, App);
 	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Profile).apply(this, arguments));
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(App).apply(this, arguments));
 	  }
 	
-	  _createClass(Profile, [{
+	  _createClass(App, [{
 	    key: 'render',
 	    value: function render() {
 	      var _props = this.props;
 	      var name = _props.name;
 	      var age = _props.age;
 	      var bio = _props.bio;
-	      var pic = _props.pic;
 	
 	      return _react2.default.createElement(
 	        'div',
 	        null,
 	        _react2.default.createElement(
-	          'h2',
+	          'p',
+	          null,
+	          ' Hello React!'
+	        ),
+	        _react2.default.createElement(
+	          'p',
 	          null,
 	          name
 	        ),
 	        _react2.default.createElement(
-	          'h4',
+	          'p',
 	          null,
-	          'Age: ',
+	          'age: ',
 	          age
 	        ),
 	        _react2.default.createElement(
-	          'h4',
+	          'p',
 	          null,
-	          'Bio: ',
+	          'bio: ',
 	          bio
 	        )
 	      );
 	    }
 	  }]);
 	
-	  return Profile;
+	  return App;
 	}(_react2.default.Component);
 	
-	_react2.default.render(_react2.default.createElement(Profile, { name: 'Shaun Appelbaum', age: 27, bio: 'I write code and lift weights.' }), document.getElementById('app'));
+	(0, _reactDom.render)(_react2.default.createElement(App, { name: 'Shaun', age: 27, bio: 'I lift weights and write code.' }), document.getElementById('app'));
 
 /***/ },
 /* 1 */
