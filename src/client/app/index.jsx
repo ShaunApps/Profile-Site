@@ -1,19 +1,34 @@
 import React from 'react';
 import {render} from 'react-dom';
-import NavBar from './navbar.jsx';
+import { Tabs, Tab, Nav, NavItem, Navbar } from 'react-bootstrap'
+import { Router, Route, Link } from 'react-router'
 
 class App extends React.Component {
   render () {
-    var { name, age, bio } = this.props;
     return (
       <div>
-        <p>{name}</p>
-        <p>bio: {bio}</p>
+        <h1>This should be /</h1>
+        <ul>
+          <li><Link to="/about">About</Link></li>
+        </ul>
       </div>
-    );
+  )
+ }
+}
+
+class About extends React.Component {
+  render () {
+    return (
+      <h1>About</h1>
+    )
   }
 }
 
 
-render(<NavBar />, document.getElementById('nav'));
-render(<App name="Shaun" bio="I lift weights and write code."/>, document.getElementById('app'));
+render((
+  <Router>
+    <Route path="/" component={App}>
+      <Route path="about" component={About} ></Route>
+    </Route>
+  </Router>
+), document.getElementById('app'));
