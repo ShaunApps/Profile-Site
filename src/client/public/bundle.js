@@ -82,25 +82,42 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
+	        _reactBootstrap.Grid,
 	        null,
 	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'This should be /'
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2.default.createElement(_reactBootstrap.Col, { xs: 6, md: 4 }),
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { xs: 6, md: 4 },
+	            _react2.default.createElement(
+	              'h1',
+	              null,
+	              'Shaun Appelbaum'
+	            )
+	          ),
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 4 })
 	        ),
 	        _react2.default.createElement(
-	          'ul',
-	          null,
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2.default.createElement(_reactBootstrap.Col, { xs: 6, md: 4 }),
 	          _react2.default.createElement(
-	            'li',
-	            null,
+	            _reactBootstrap.Col,
+	            { xs: 6, md: 4 },
 	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/about' },
-	              'About'
+	              'p',
+	              null,
+	              'I like to write code and lift weights.'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Passionate about Bitcoin. Markets are efficient.'
 	            )
-	          )
+	          ),
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 4 })
 	        )
 	      );
 	    }
@@ -109,37 +126,10 @@
 	  return App;
 	}(_react2.default.Component);
 	
-	var About = function (_React$Component2) {
-	  _inherits(About, _React$Component2);
-	
-	  function About() {
-	    _classCallCheck(this, About);
-	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(About).apply(this, arguments));
-	  }
-	
-	  _createClass(About, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'h1',
-	        null,
-	        'About'
-	      );
-	    }
-	  }]);
-	
-	  return About;
-	}(_react2.default.Component);
-	
 	(0, _reactDom.render)(_react2.default.createElement(
 	  _reactRouter.Router,
 	  null,
-	  _react2.default.createElement(
-	    _reactRouter.Route,
-	    { path: '/', component: App },
-	    _react2.default.createElement(_reactRouter.Route, { path: 'about', component: About })
-	  )
+	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: App })
 	), document.getElementById('app'));
 
 /***/ },

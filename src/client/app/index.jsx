@@ -1,34 +1,37 @@
 import React from 'react';
 import {render} from 'react-dom';
-import { Tabs, Tab, Nav, NavItem, Navbar } from 'react-bootstrap'
+import { Tabs, Tab, Nav, NavItem, Navbar, Grid, Row, Col } from 'react-bootstrap'
 import { Router, Route, Link } from 'react-router'
 
 class App extends React.Component {
   render () {
     return (
-      <div>
-        <h1>This should be /</h1>
-        <ul>
-          <li><Link to="/about">About</Link></li>
-        </ul>
-      </div>
+    
+      <Grid>
+        <Row className="show-grid">
+          <Col xs={6} md={4}></Col>
+          <Col xs={6} md={4}>
+            <h1>Shaun Appelbaum</h1>
+          </Col>
+          <Col xsHidden md={4}></Col>
+        </Row>
+        <Row className="show-grid">
+          <Col xs={6} md={4}></Col>
+          <Col xs={6} md={4}>
+            <p>I like to write code and lift weights.</p>
+            <p>Passionate about Bitcoin. Markets are efficient.</p>
+          </Col>
+          <Col xsHidden md={4}></Col>
+        </Row>
+      </Grid>
   )
  }
 }
 
-class About extends React.Component {
-  render () {
-    return (
-      <h1>About</h1>
-    )
-  }
-}
 
 
 render((
   <Router>
-    <Route path="/" component={App}>
-      <Route path="about" component={About} ></Route>
-    </Route>
+    <Route path="/" component={App}></Route>
   </Router>
 ), document.getElementById('app'));
