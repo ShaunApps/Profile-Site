@@ -61,6 +61,10 @@
 	
 	var _reactRouter = __webpack_require__(/*! react-router */ 431);
 	
+	var _navbar = __webpack_require__(/*! ./navbar.jsx */ 490);
+	
+	var _navbar2 = _interopRequireDefault(_navbar);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -128,7 +132,7 @@
 	
 	(0, _reactDom.render)(_react2.default.createElement(
 	  _reactRouter.Router,
-	  null,
+	  { component: _navbar2.default },
 	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: App })
 	), document.getElementById('app'));
 
@@ -46120,6 +46124,134 @@
 	
 	exports['default'] = _createRouterHistory2['default'](_historyLibCreateHashHistory2['default']);
 	module.exports = exports['default'];
+
+/***/ },
+/* 490 */
+/*!***********************************!*\
+  !*** ./src/client/app/navbar.jsx ***!
+  \***********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(/*! react-dom */ 32);
+	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 166);
+	
+	var _reactRouter = __webpack_require__(/*! react-router */ 431);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var navBar = function (_React$Component) {
+	  _inherits(navBar, _React$Component);
+	
+	  function navBar() {
+	    _classCallCheck(this, navBar);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(navBar).apply(this, arguments));
+	  }
+	
+	  _createClass(navBar, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        _reactBootstrap.Navbar,
+	        { inverse: true },
+	        _react2.default.createElement(
+	          _reactBootstrap.Navbar.Header,
+	          null,
+	          _react2.default.createElement(
+	            _reactBootstrap.Navbar.Brand,
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: '#' },
+	              'React-Bootstrap'
+	            )
+	          ),
+	          _react2.default.createElement(_reactBootstrap.Navbar.Toggle, null)
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Navbar.Collapse,
+	          null,
+	          _react2.default.createElement(
+	            _reactBootstrap.Nav,
+	            null,
+	            _react2.default.createElement(
+	              _reactBootstrap.NavItem,
+	              { eventKey: 1, href: '#' },
+	              'Link'
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.NavItem,
+	              { eventKey: 2, href: '#' },
+	              'Link'
+	            ),
+	            _react2.default.createElement(
+	              NavDropdown,
+	              { eventKey: 3, title: 'Dropdown', id: 'basic-nav-dropdown' },
+	              _react2.default.createElement(
+	                MenuItem,
+	                { eventKey: 3.1 },
+	                'Action'
+	              ),
+	              _react2.default.createElement(
+	                MenuItem,
+	                { eventKey: 3.2 },
+	                'Another action'
+	              ),
+	              _react2.default.createElement(
+	                MenuItem,
+	                { eventKey: 3.3 },
+	                'Something else here'
+	              ),
+	              _react2.default.createElement(MenuItem, { divider: true }),
+	              _react2.default.createElement(
+	                MenuItem,
+	                { eventKey: 3.3 },
+	                'Separated link'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Nav,
+	            { pullRight: true },
+	            _react2.default.createElement(
+	              _reactBootstrap.NavItem,
+	              { eventKey: 1, href: '#' },
+	              'Link Right'
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.NavItem,
+	              { eventKey: 2, href: '#' },
+	              'Link Right'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return navBar;
+	}(_react2.default.Component);
+	
+	exports.default = navBar;
 
 /***/ }
 /******/ ]);
