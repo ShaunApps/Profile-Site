@@ -1,5 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
+import NavBar from './navbar.jsx';
 
 class App extends React.Component {
   render () {
@@ -7,11 +8,12 @@ class App extends React.Component {
     return (
       <div>
         <p>{name}</p>
-        <p>age: {age}</p>
         <p>bio: {bio}</p>
       </div>
     );
   }
 }
 
-render(<App name="Shaun" age={27} bio="I lift weights and write code."/>, document.getElementById('app'));
+
+render(<NavBar />, document.getElementById('nav'));
+render(<App name="Shaun" bio="I lift weights and write code."/>, document.getElementById('app'));
