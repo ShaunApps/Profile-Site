@@ -69,6 +69,10 @@
 	
 	var _bio2 = _interopRequireDefault(_bio);
 	
+	var _skills = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./skills.jsx\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	
+	var _skills2 = _interopRequireDefault(_skills);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -89,7 +93,12 @@
 	  _createClass(App, [{
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement(_bio2.default, null);
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(_bio2.default, null),
+	        _react2.default.createElement(_skills2.default, { skill: TECH_USED })
+	      );
 	    }
 	  }]);
 	
@@ -46152,63 +46161,6 @@
 	            )
 	          ),
 	          _react2.default.createElement(_reactBootstrap.Navbar.Toggle, null)
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Navbar.Collapse,
-	          null,
-	          _react2.default.createElement(
-	            _reactBootstrap.Nav,
-	            null,
-	            _react2.default.createElement(
-	              _reactBootstrap.NavItem,
-	              { eventKey: 1, href: '#' },
-	              'Link'
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.NavItem,
-	              { eventKey: 2, href: '#' },
-	              'Link'
-	            ),
-	            _react2.default.createElement(
-	              NavDropdown,
-	              { eventKey: 3, title: 'Dropdown', id: 'basic-nav-dropdown' },
-	              _react2.default.createElement(
-	                MenuItem,
-	                { eventKey: 3.1 },
-	                'Action'
-	              ),
-	              _react2.default.createElement(
-	                MenuItem,
-	                { eventKey: 3.2 },
-	                'Another action'
-	              ),
-	              _react2.default.createElement(
-	                MenuItem,
-	                { eventKey: 3.3 },
-	                'Something else here'
-	              ),
-	              _react2.default.createElement(MenuItem, { divider: true }),
-	              _react2.default.createElement(
-	                MenuItem,
-	                { eventKey: 3.3 },
-	                'Separated link'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Nav,
-	            { pullRight: true },
-	            _react2.default.createElement(
-	              _reactBootstrap.NavItem,
-	              { eventKey: 1, href: '#' },
-	              'Link Right'
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.NavItem,
-	              { eventKey: 2, href: '#' },
-	              'Link Right'
-	            )
-	          )
 	        )
 	      );
 	    }
@@ -46217,7 +46169,6 @@
 	  return navBar;
 	}(_react2.default.Component);
 	
-	exports.default = navBar;
 	exports.default = navBar;
 
 /***/ },
