@@ -6,6 +6,13 @@ const PROJECT_LINKS = [
 
 ]
 class Projects extends React.Component {
+  render(){
+    return (
+      <div>
+        
+      </div>
+    )
+  }
 
 
 

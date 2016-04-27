@@ -69,6 +69,10 @@
 	
 	var _bio2 = _interopRequireDefault(_bio);
 	
+	var _skills = __webpack_require__(/*! ./pages/skills.jsx */ 492);
+	
+	var _skills2 = _interopRequireDefault(_skills);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -76,8 +80,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	// import SkillSetBox from './pages/skills.jsx';
 	
 	// main component
 	
@@ -97,7 +99,8 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_navbar2.default, null),
-	        _react2.default.createElement(_bio2.default, null)
+	        _react2.default.createElement(_bio2.default, null),
+	        _react2.default.createElement(_skills2.default, null)
 	      );
 	    }
 	  }]);
@@ -46145,7 +46148,6 @@
 	  _createClass(NavBar, [{
 	    key: 'render',
 	    value: function render() {
-	      console.log("testing234");
 	      return _react2.default.createElement(
 	        _reactBootstrap.Navbar,
 	        { inverse: true },
@@ -46158,7 +46160,7 @@
 	            _react2.default.createElement(
 	              'a',
 	              { href: '#' },
-	              'React-Bootstrap'
+	              'Shaun Appelbaum'
 	            )
 	          ),
 	          _react2.default.createElement(_reactBootstrap.Navbar.Toggle, null)
@@ -46168,30 +46170,21 @@
 	          null,
 	          _react2.default.createElement(
 	            _reactBootstrap.Nav,
-	            null,
-	            _react2.default.createElement(
-	              _reactBootstrap.NavItem,
-	              { eventKey: 1, href: '#' },
-	              'Link'
-	            ),
-	            _react2.default.createElement(
-	              _reactBootstrap.NavItem,
-	              { eventKey: 2, href: '#' },
-	              'Link'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Nav,
 	            { pullRight: true },
 	            _react2.default.createElement(
 	              _reactBootstrap.NavItem,
 	              { eventKey: 1, href: '#' },
-	              'Link Right'
+	              'About'
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.NavItem,
+	              { eventKey: 1, href: '#' },
+	              'Blog'
 	            ),
 	            _react2.default.createElement(
 	              _reactBootstrap.NavItem,
 	              { eventKey: 2, href: '#' },
-	              'Link Right'
+	              'Contact'
 	            )
 	          )
 	        )
@@ -46295,6 +46288,184 @@
 	}(_react2.default.Component);
 	
 	exports.default = Bio;
+
+/***/ },
+/* 492 */
+/*!*****************************************!*\
+  !*** ./src/client/app/pages/skills.jsx ***!
+  \*****************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(/*! react-dom */ 32);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var TECH_USED = [{ name: 'Javascript', image: '' }, { name: 'Node.js', image: '' }, { name: 'React.js', image: '' }, { name: 'Ruby', image: '' }, { name: 'Rails', image: '' }, { name: 'HTML', image: '' }, { name: 'CSS', image: '' }];
+	
+	// turns the prop into table elements with name and image
+	
+	var SkillSetRow = function (_React$Component) {
+	  _inherits(SkillSetRow, _React$Component);
+	
+	  function SkillSetRow() {
+	    _classCallCheck(this, SkillSetRow);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(SkillSetRow).apply(this, arguments));
+	  }
+	
+	  _createClass(SkillSetRow, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'tr',
+	        null,
+	        _react2.default.createElement(
+	          'td',
+	          { colSpan: '4' },
+	          this.props.skill.name
+	        ),
+	        _react2.default.createElement(
+	          'td',
+	          { colSpan: '4' },
+	          this.props.skill.image
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return SkillSetRow;
+	}(_react2.default.Component);
+	// calls SkillSet Row on each element in data passed down and formats it
+	
+	
+	var SkillSetBox = function (_React$Component2) {
+	  _inherits(SkillSetBox, _React$Component2);
+	
+	  function SkillSetBox() {
+	    _classCallCheck(this, SkillSetBox);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(SkillSetBox).apply(this, arguments));
+	  }
+	
+	  _createClass(SkillSetBox, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'table',
+	        { 'class': 'table-responsive' },
+	        _react2.default.createElement(
+	          'thead',
+	          null,
+	          _react2.default.createElement(
+	            'tr',
+	            null,
+	            _react2.default.createElement(
+	              'th',
+	              null,
+	              'Skills'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'tbody',
+	          null,
+	          _react2.default.createElement(
+	            'tr',
+	            null,
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              'Javascript'
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              _react2.default.createElement('img', { src: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png', height: '100', width: '100' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'tr',
+	            null,
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              'Node.js'
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              _react2.default.createElement('img', { src: 'https://node-os.com/images/nodejs.png', height: '100', width: '100' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'tr',
+	            null,
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              'React.js'
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              _react2.default.createElement('img', { src: 'https://facebook.github.io/react/img/logo_og.png', height: '100', width: '100' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'tr',
+	            null,
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              'Ruby'
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              _react2.default.createElement('img', { src: 'http://budiirawan.com/wp-content/uploads/2015/04/ruby-logo.png', height: '100', width: '100' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'tr',
+	            null,
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              'HTML & CSS'
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              _react2.default.createElement('img', { src: 'http://www.itbaloch.com/wp-content/uploads/2015/06/html-css.jpg', height: '75', width: '100' })
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return SkillSetBox;
+	}(_react2.default.Component);
+	
+	exports.default = SkillSetBox;
 
 /***/ }
 /******/ ]);
