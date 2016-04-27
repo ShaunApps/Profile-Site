@@ -17,9 +17,8 @@ class App extends React.Component {
 }
 
 
-
 render((
-  <Router component={navBar}>
+  <Router>
     <Route path="/" component={App}></Route>
   </Router>
 ), document.getElementById('app'));

@@ -98,7 +98,7 @@
 	
 	(0, _reactDom.render)(_react2.default.createElement(
 	  _reactRouter.Router,
-	  { component: _navbar2.default },
+	  null,
 	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: App })
 	), document.getElementById('app'));
 
@@ -46227,7 +46227,7 @@
   \********************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -46238,6 +46238,10 @@
 	var _react = __webpack_require__(/*! react */ 1);
 	
 	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(/*! react-dom */ 32);
+	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 166);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -46257,45 +46261,45 @@
 	  }
 	
 	  _createClass(Bio, [{
-	    key: "render",
+	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        Grid,
+	        _reactBootstrap.Grid,
 	        null,
 	        _react2.default.createElement(
-	          Row,
-	          { className: "show-grid" },
-	          _react2.default.createElement(Col, { xs: 6, md: 4 }),
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2.default.createElement(_reactBootstrap.Col, { xs: 6, md: 4 }),
 	          _react2.default.createElement(
-	            Col,
+	            _reactBootstrap.Col,
 	            { xs: 6, md: 4 },
 	            _react2.default.createElement(
-	              "h1",
+	              'h1',
 	              null,
-	              "Shaun Appelbaum"
+	              'Shaun Appelbaum'
 	            )
 	          ),
-	          _react2.default.createElement(Col, { xsHidden: true, md: 4 })
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 4 })
 	        ),
 	        _react2.default.createElement(
-	          Row,
-	          { className: "show-grid" },
-	          _react2.default.createElement(Col, { xs: 6, md: 4 }),
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2.default.createElement(_reactBootstrap.Col, { xs: 6, md: 4 }),
 	          _react2.default.createElement(
-	            Col,
+	            _reactBootstrap.Col,
 	            { xs: 6, md: 4 },
 	            _react2.default.createElement(
-	              "p",
+	              'p',
 	              null,
-	              "I like to write code and lift weights."
+	              'I like to write code and lift weights.'
 	            ),
 	            _react2.default.createElement(
-	              "p",
+	              'p',
 	              null,
-	              "Passionate about Bitcoin. Markets are efficient."
+	              'Passionate about Bitcoin. Markets are efficient.'
 	            )
 	          ),
-	          _react2.default.createElement(Col, { xsHidden: true, md: 4 })
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 4 })
 	        )
 	      );
 	    }
