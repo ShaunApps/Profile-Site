@@ -11,7 +11,7 @@ const TECH_USED = [
   { name: 'CSS', image: ''}
 ];
 
-
+// turns the prop into table elements with name and image
 export default class SkillSetRow extends React.Component {
   render() {
     return (
@@ -22,7 +22,7 @@ export default class SkillSetRow extends React.Component {
     );
   }
 }
-
+// calls SkillSet Row on each element in data passed down and formats it 
 export default class SkillSetBox extends React.Component {
   render() {
     var rows = [];

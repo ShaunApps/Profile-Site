@@ -3,7 +3,7 @@ import {render} from 'react-dom';
 import { Nav, NavItem, Navbar, Grid, Row, Col } from 'react-bootstrap';
 
 
-
+// this Component renders my bio
 export default class Bio extends React.Component {
   render () {
     return (

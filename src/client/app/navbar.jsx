@@ -4,7 +4,7 @@ import {render} from 'react-dom';
 import { Nav, NavItem, Navbar, NavDropdown } from 'react-bootstrap';
 import { Router, Route, Link } from 'react-router';
 
-
+// this should be the navbar, still working on formatting this 
 export default class navBar extends React.Component {
   render() {
     return (

@@ -7,7 +7,7 @@ import Bio from './bio.jsx';
 import SkillSetBox from './skills.jsx';
 
 
-
+// main component
 class App extends React.Component {
   render () {
     return (
