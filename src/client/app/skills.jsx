@@ -11,26 +11,6 @@ const = TECH_USED = [
   { name: 'CSS', image: ''}
 ]
 
-class SkillSetBox extends React.Component {
-  render() {
-    var rows = [];
-    this.props.skills.forEach(function(skill) {
-      rows.push(<SkillSetRow skill={skill} key={skill.name} />);
-};
-    return (
-      <table>
-        <thead>
-          <tr>
-            <th>Skill</th>
-          </tr>
-        </thead>
-        <tbody>{rows}</tbody>
-      </table>
-
-    );
-  }
-}
-
 
 class SkillSetRow extends React.Component {
   render() {
@@ -43,8 +23,22 @@ class SkillSetRow extends React.Component {
   }
 }
 
+export default class SkillSetBox extends React.Component {
+  render() {
+    var rows = [];
+    this.props.skills.forEach(function(skill) {
+      rows.push(<SkillSetRow skill={skill} key={skill.name} />);
+};
+    return (
+      <table>
+        <thead>
+          <tr>
+            <th>Skills</th>
+          </tr>
+        </thead>
+        <tbody>{rows}</tbody>
+      </table>
 
-ReactDOM.render(
-  <SkillSetBox skills={TECH_USED} />,
-  document.getElementById('skillset')
-);
+    );
+  }
+}

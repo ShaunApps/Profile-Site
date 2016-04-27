@@ -5,7 +5,7 @@ import { Nav, NavItem, Navbar, Grid, Row, Col } from 'react-bootstrap';
 import { Router, Route, Link } from 'react-router';
 
 
-class navBar extends React.Component {
+export default class navBar extends React.Component {
   render() {
     return (
 

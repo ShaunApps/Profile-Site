@@ -65,6 +65,10 @@
 	
 	var _navbar2 = _interopRequireDefault(_navbar);
 	
+	var _bio = __webpack_require__(/*! ./bio.jsx */ 491);
+	
+	var _bio2 = _interopRequireDefault(_bio);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -85,45 +89,7 @@
 	  _createClass(App, [{
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          { className: 'show-grid' },
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 6, md: 4 }),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 6, md: 4 },
-	            _react2.default.createElement(
-	              'h1',
-	              null,
-	              'Shaun Appelbaum'
-	            )
-	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 4 })
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          { className: 'show-grid' },
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 6, md: 4 }),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 6, md: 4 },
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'I like to write code and lift weights.'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Passionate about Bitcoin. Markets are efficient.'
-	            )
-	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 4 })
-	        )
-	      );
+	      return _react2.default.createElement(_bio2.default, null);
 	    }
 	  }]);
 	
@@ -46252,6 +46218,93 @@
 	}(_react2.default.Component);
 	
 	exports.default = navBar;
+	exports.default = navBar;
+
+/***/ },
+/* 491 */
+/*!********************************!*\
+  !*** ./src/client/app/bio.jsx ***!
+  \********************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Bio = function (_React$Component) {
+	  _inherits(Bio, _React$Component);
+	
+	  function Bio() {
+	    _classCallCheck(this, Bio);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Bio).apply(this, arguments));
+	  }
+	
+	  _createClass(Bio, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        Grid,
+	        null,
+	        _react2.default.createElement(
+	          Row,
+	          { className: "show-grid" },
+	          _react2.default.createElement(Col, { xs: 6, md: 4 }),
+	          _react2.default.createElement(
+	            Col,
+	            { xs: 6, md: 4 },
+	            _react2.default.createElement(
+	              "h1",
+	              null,
+	              "Shaun Appelbaum"
+	            )
+	          ),
+	          _react2.default.createElement(Col, { xsHidden: true, md: 4 })
+	        ),
+	        _react2.default.createElement(
+	          Row,
+	          { className: "show-grid" },
+	          _react2.default.createElement(Col, { xs: 6, md: 4 }),
+	          _react2.default.createElement(
+	            Col,
+	            { xs: 6, md: 4 },
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "I like to write code and lift weights."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Passionate about Bitcoin. Markets are efficient."
+	            )
+	          ),
+	          _react2.default.createElement(Col, { xsHidden: true, md: 4 })
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Bio;
+	}(_react2.default.Component);
+	
+	exports.default = Bio;
 
 /***/ }
 /******/ ]);
