@@ -73,6 +73,10 @@
 	
 	var _skills2 = _interopRequireDefault(_skills);
 	
+	var _contactme = __webpack_require__(/*! ./pages/contactme.jsx */ 493);
+	
+	var _contactme2 = _interopRequireDefault(_contactme);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -100,7 +104,8 @@
 	        null,
 	        _react2.default.createElement(_navbar2.default, null),
 	        _react2.default.createElement(_bio2.default, null),
-	        _react2.default.createElement(_skills2.default, null)
+	        _react2.default.createElement(_skills2.default, null),
+	        _react2.default.createElement(_contactme2.default, null)
 	      );
 	    }
 	  }]);
@@ -46373,99 +46378,93 @@
 	      return _react2.default.createElement(
 	        'table',
 	        { 'class': 'table-responsive', colSpan: '12' },
-	        _react2.default.createElement(_reactBootstrap.Col, { xs: 2, md: 2 }),
 	        _react2.default.createElement(
-	          _reactBootstrap.Col,
-	          { xs: 4, md: 8 },
+	          'thead',
+	          null,
 	          _react2.default.createElement(
-	            'thead',
+	            'tr',
 	            null,
 	            _react2.default.createElement(
-	              'tr',
+	              'th',
 	              null,
-	              _react2.default.createElement(
-	                'th',
-	                null,
-	                'Skills'
-	              )
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'tbody',
-	            null,
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
-	                { colSpan: '4' },
-	                'Javascript'
-	              ),
-	              _react2.default.createElement(
-	                'td',
-	                { colSpan: '4' },
-	                _react2.default.createElement('img', { src: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png', height: '100', width: '100' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
-	                { colSpan: '4' },
-	                'Node.js'
-	              ),
-	              _react2.default.createElement(
-	                'td',
-	                { colSpan: '4' },
-	                _react2.default.createElement('img', { src: 'https://node-os.com/images/nodejs.png', height: '100', width: '100' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
-	                { colSpan: '4' },
-	                'React.js'
-	              ),
-	              _react2.default.createElement(
-	                'td',
-	                { colSpan: '4' },
-	                _react2.default.createElement('img', { src: 'https://facebook.github.io/react/img/logo_og.png', height: '100', width: '100' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
-	                { colSpan: '4' },
-	                'Ruby'
-	              ),
-	              _react2.default.createElement(
-	                'td',
-	                { colSpan: '4' },
-	                _react2.default.createElement('img', { src: 'http://budiirawan.com/wp-content/uploads/2015/04/ruby-logo.png', height: '100', width: '100' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
-	                { colSpan: '4' },
-	                'HTML & CSS'
-	              ),
-	              _react2.default.createElement(
-	                'td',
-	                { colSpan: '4' },
-	                _react2.default.createElement('img', { src: 'http://www.itbaloch.com/wp-content/uploads/2015/06/html-css.jpg', height: '75', width: '100' })
-	              )
+	              'Skills'
 	            )
 	          )
 	        ),
-	        _react2.default.createElement(_reactBootstrap.Col, { xs: 2, md: 2 })
+	        _react2.default.createElement(
+	          'tbody',
+	          null,
+	          _react2.default.createElement(
+	            'tr',
+	            null,
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              'Javascript'
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              _react2.default.createElement('img', { src: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png', height: '100', width: '100' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'tr',
+	            null,
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              'Node.js'
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              _react2.default.createElement('img', { src: 'https://node-os.com/images/nodejs.png', height: '100', width: '100' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'tr',
+	            null,
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              'React.js'
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              _react2.default.createElement('img', { src: 'https://facebook.github.io/react/img/logo_og.png', height: '100', width: '100' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'tr',
+	            null,
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              'Ruby'
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              _react2.default.createElement('img', { src: 'http://budiirawan.com/wp-content/uploads/2015/04/ruby-logo.png', height: '100', width: '100' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'tr',
+	            null,
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              'HTML & CSS'
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              { colSpan: '4' },
+	              _react2.default.createElement('img', { src: 'http://www.itbaloch.com/wp-content/uploads/2015/06/html-css.jpg', height: '75', width: '100' })
+	            )
+	          )
+	        )
 	      );
 	    }
 	  }]);
@@ -46474,6 +46473,66 @@
 	}(_react2.default.Component);
 	
 	exports.default = SkillSetBox;
+
+/***/ },
+/* 493 */
+/*!********************************************!*\
+  !*** ./src/client/app/pages/contactme.jsx ***!
+  \********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(/*! react-dom */ 32);
+	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 166);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Contactme = function (_React$Component) {
+	  _inherits(Contactme, _React$Component);
+	
+	  function Contactme() {
+	    _classCallCheck(this, Contactme);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Contactme).apply(this, arguments));
+	  }
+	
+	  _createClass(Contactme, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://github.com/ShaunApps' },
+	          _react2.default.createElement('img', { src: 'https://assets-cdn.github.com/images/modules/open_graph/github-mark.png', width: '125', height: '80' })
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return Contactme;
+	}(_react2.default.Component);
+	
+	exports.default = Contactme;
 
 /***/ }
 /******/ ]);

@@ -28,8 +28,6 @@ export default class SkillSetBox extends React.Component {
   render() {
     return (
       <table class="table-responsive" colSpan="12" >
-      <Col xs={2} md={2}></Col>
-      <Col xs={4} md={8}>
         <thead>
           <tr>
             <th>Skills</th>
@@ -57,9 +55,8 @@ export default class SkillSetBox extends React.Component {
           <td colSpan="4"><img src='http://www.itbaloch.com/wp-content/uploads/2015/06/html-css.jpg' height='75' width='100' /></td>
         </tr>
         </tbody>
-        </Col>
-        <Col xs={2} md={2}></Col>
       </table>
+
 
     );
   }

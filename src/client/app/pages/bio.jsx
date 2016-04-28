@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-import { Nav, NavItem, Navbar, Grid, Row, Col } from 'react-bootstrap';
+import { Nav, NavItem, Navbar, Grid, Row, Col, Link } from 'react-bootstrap';
 
 
 // this Component renders my bio
