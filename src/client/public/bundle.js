@@ -46178,12 +46178,12 @@
 	            ),
 	            _react2.default.createElement(
 	              _reactBootstrap.NavItem,
-	              { eventKey: 1, href: '#' },
+	              { eventKey: 2, href: '#' },
 	              'Blog'
 	            ),
 	            _react2.default.createElement(
 	              _reactBootstrap.NavItem,
-	              { eventKey: 2, href: '#' },
+	              { eventKey: 3, href: '#' },
 	              'Contact'
 	            )
 	          )
@@ -46310,6 +46310,8 @@
 	
 	var _reactDom = __webpack_require__(/*! react-dom */ 32);
 	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 166);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -46370,94 +46372,100 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'table',
-	        { 'class': 'table-responsive' },
+	        { 'class': 'table-responsive', colSpan: '12' },
+	        _react2.default.createElement(_reactBootstrap.Col, { xs: 2, md: 2 }),
 	        _react2.default.createElement(
-	          'thead',
-	          null,
+	          _reactBootstrap.Col,
+	          { xs: 4, md: 8 },
 	          _react2.default.createElement(
-	            'tr',
+	            'thead',
 	            null,
 	            _react2.default.createElement(
-	              'th',
+	              'tr',
 	              null,
-	              'Skills'
+	              _react2.default.createElement(
+	                'th',
+	                null,
+	                'Skills'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'tbody',
+	            null,
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                { colSpan: '4' },
+	                'Javascript'
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                { colSpan: '4' },
+	                _react2.default.createElement('img', { src: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png', height: '100', width: '100' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                { colSpan: '4' },
+	                'Node.js'
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                { colSpan: '4' },
+	                _react2.default.createElement('img', { src: 'https://node-os.com/images/nodejs.png', height: '100', width: '100' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                { colSpan: '4' },
+	                'React.js'
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                { colSpan: '4' },
+	                _react2.default.createElement('img', { src: 'https://facebook.github.io/react/img/logo_og.png', height: '100', width: '100' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                { colSpan: '4' },
+	                'Ruby'
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                { colSpan: '4' },
+	                _react2.default.createElement('img', { src: 'http://budiirawan.com/wp-content/uploads/2015/04/ruby-logo.png', height: '100', width: '100' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                { colSpan: '4' },
+	                'HTML & CSS'
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                { colSpan: '4' },
+	                _react2.default.createElement('img', { src: 'http://www.itbaloch.com/wp-content/uploads/2015/06/html-css.jpg', height: '75', width: '100' })
+	              )
 	            )
 	          )
 	        ),
-	        _react2.default.createElement(
-	          'tbody',
-	          null,
-	          _react2.default.createElement(
-	            'tr',
-	            null,
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              'Javascript'
-	            ),
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              _react2.default.createElement('img', { src: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png', height: '100', width: '100' })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'tr',
-	            null,
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              'Node.js'
-	            ),
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              _react2.default.createElement('img', { src: 'https://node-os.com/images/nodejs.png', height: '100', width: '100' })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'tr',
-	            null,
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              'React.js'
-	            ),
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              _react2.default.createElement('img', { src: 'https://facebook.github.io/react/img/logo_og.png', height: '100', width: '100' })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'tr',
-	            null,
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              'Ruby'
-	            ),
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              _react2.default.createElement('img', { src: 'http://budiirawan.com/wp-content/uploads/2015/04/ruby-logo.png', height: '100', width: '100' })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'tr',
-	            null,
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              'HTML & CSS'
-	            ),
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              _react2.default.createElement('img', { src: 'http://www.itbaloch.com/wp-content/uploads/2015/06/html-css.jpg', height: '75', width: '100' })
-	            )
-	          )
-	        )
+	        _react2.default.createElement(_reactBootstrap.Col, { xs: 2, md: 2 })
 	      );
 	    }
 	  }]);
