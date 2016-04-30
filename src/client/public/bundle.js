@@ -46518,12 +46518,39 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
+	        _reactBootstrap.Grid,
 	        null,
 	        _react2.default.createElement(
-	          'a',
-	          { href: 'https://github.com/ShaunApps' },
-	          _react2.default.createElement('img', { src: 'https://assets-cdn.github.com/images/modules/open_graph/github-mark.png', width: '125', height: '80' })
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2.default.createElement(_reactBootstrap.Col, { xs: 5, md: 3 }),
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { xs: 2, md: 2 },
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/ShaunApps' },
+	              _react2.default.createElement('img', { src: 'https://assets-cdn.github.com/images/modules/open_graph/github-mark.png', width: '140', height: '80\\' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { xs: 2, md: 2 },
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://twitter.com/shaunappelbaum' },
+	              _react2.default.createElement('img', { src: 'https://pbs.twimg.com/profile_images/666407537084796928/YBGgi9BO.png', width: '125', height: '100' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { xs: 2, md: 2 },
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://linkedin.com/in/shaunappelbaum' },
+	              _react2.default.createElement('img', { src: 'https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=w300', width: '100', height: '75' })
+	            )
+	          )
 	        )
 	      );
 	    }
