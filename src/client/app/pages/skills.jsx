@@ -2,14 +2,12 @@ import React from 'react';
 import {render} from 'react-dom';
 import { Row, Col, colSpan, Table, Label, Grid } from 'react-bootstrap';
 
-const TECH_USED = [
-  { name: 'Javascript', image: ''},
-  { name: 'Node.js', image: ''},
-  { name: 'React.js', image: ''},
-  { name: 'Ruby', image: ''},
-  { name: 'Rails', image: ''},
-  { name: 'HTML', image: ''},
-  { name: 'CSS', image: ''}
+var TECH_USED = [
+  { name: 'Javascript', image: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png'},
+  { name: 'Node.js', image: 'https://node-os.com/images/nodejs.png'},
+  { name: 'React.js', image: 'https://facebook.github.io/react/img/logo_og.png'},
+  { name: 'Ruby', image: 'http://budiirawan.com/wp-content/uploads/2015/04/ruby-logo.png'},
+  { name: 'Rails', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Ruby_on_Rails.svg/791px-Ruby_on_Rails.svg.png'}
 ];
 
 
@@ -24,8 +22,8 @@ class SkillSetRow extends React.Component {
   render() {
     return (
       <tr>
-        <td colSpan="4">{this.props.skill.name}</td>
-        <td colSpan="4">{this.props.skill.image}</td>
+        <td>{this.props.skill.name}</td>
+        <td><img src={this.props.skill.image} height='35' width='35' /></td>
       </tr>
     );
   }

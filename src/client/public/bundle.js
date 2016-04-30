@@ -46159,7 +46159,7 @@
 	            null,
 	            _react2.default.createElement(
 	              'a',
-	              { href: '#' },
+	              { href: '/' },
 	              'Shaun Appelbaum'
 	            )
 	          ),
@@ -46363,7 +46363,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var TECH_USED = [{ name: 'Javascript', image: '' }, { name: 'Node.js', image: '' }, { name: 'React.js', image: '' }, { name: 'Ruby', image: '' }, { name: 'Rails', image: '' }, { name: 'HTML', image: '' }, { name: 'CSS', image: '' }];
+	var TECH_USED = [{ name: 'Javascript', image: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png' }, { name: 'Node.js', image: 'https://node-os.com/images/nodejs.png' }, { name: 'React.js', image: 'https://facebook.github.io/react/img/logo_og.png' }, { name: 'Ruby', image: 'http://budiirawan.com/wp-content/uploads/2015/04/ruby-logo.png' }, { name: 'Rails', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Ruby_on_Rails.svg/791px-Ruby_on_Rails.svg.png' }];
 	
 	var tableStyle = {
 	  marginTop: 50,
@@ -46390,13 +46390,13 @@
 	        null,
 	        _react2.default.createElement(
 	          'td',
-	          { colSpan: '4' },
+	          null,
 	          this.props.skill.name
 	        ),
 	        _react2.default.createElement(
 	          'td',
-	          { colSpan: '4' },
-	          this.props.skill.image
+	          null,
+	          _react2.default.createElement('img', { src: this.props.skill.image, height: '35', width: '35' })
 	        )
 	      );
 	    }

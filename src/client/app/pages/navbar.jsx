@@ -10,7 +10,7 @@ export default class NavBar extends React.Component {
       <Navbar fixedTop>
       <Navbar.Header>
         <Navbar.Brand>
-          <a href="#">Shaun Appelbaum</a>
+          <a href="/">Shaun Appelbaum</a>
         </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>
