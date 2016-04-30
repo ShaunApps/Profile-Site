@@ -65,15 +65,15 @@
 	
 	var _navbar2 = _interopRequireDefault(_navbar);
 	
-	var _bio = __webpack_require__(/*! ./pages/bio.jsx */ 491);
+	var _bio = __webpack_require__(/*! ./pages/bio/bio.jsx */ 491);
 	
 	var _bio2 = _interopRequireDefault(_bio);
 	
-	var _skills = __webpack_require__(/*! ./pages/skills.jsx */ 492);
+	var _skills = __webpack_require__(/*! ./pages/skills.jsx */ 493);
 	
 	var _skills2 = _interopRequireDefault(_skills);
 	
-	var _contactme = __webpack_require__(/*! ./pages/contactme.jsx */ 493);
+	var _contactme = __webpack_require__(/*! ./pages/contactme.jsx */ 494);
 	
 	var _contactme2 = _interopRequireDefault(_contactme);
 	
@@ -46204,9 +46204,9 @@
 
 /***/ },
 /* 491 */
-/*!**************************************!*\
-  !*** ./src/client/app/pages/bio.jsx ***!
-  \**************************************/
+/*!******************************************!*\
+  !*** ./src/client/app/pages/bio/bio.jsx ***!
+  \******************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -46224,6 +46224,10 @@
 	var _reactDom = __webpack_require__(/*! react-dom */ 32);
 	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 166);
+	
+	var _style = __webpack_require__(/*! ./style.jsx */ 492);
+	
+	var _style2 = _interopRequireDefault(_style);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -46253,40 +46257,24 @@
 	        _react2.default.createElement(
 	          _reactBootstrap.Row,
 	          { className: 'show-grid' },
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 }),
 	          _react2.default.createElement(
 	            _reactBootstrap.Col,
-	            { xs: 6, md: 4 },
-	            _react2.default.createElement(_reactBootstrap.Image, { src: '/Users/ShaunApppelbaum-MTA/Desktop/ReactJs/react-profile/assets/Shaun_profile pic.jpg', width: '275', height: '250', rounded: true })
+	            { md: 4 },
+	            _react2.default.createElement(_reactBootstrap.Image, { src: '/Users/ShaunApppelbaum-MTA/Desktop/ReactJs/react-profile/assets/Shaun_profile pic.jpg', width: '285', height: '250', rounded: true })
 	          ),
 	          _react2.default.createElement(
 	            _reactBootstrap.Col,
-	            { xs: 6, md: 4 },
+	            { style: _style2.default.jumboStyle, md: 8 },
 	            _react2.default.createElement(
-	              'h3',
+	              _reactBootstrap.Jumbotron,
 	              null,
-	              'Shaun Appelbaum'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'I like to write code and lift weights.'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Passionate about Bitcoin. Markets are efficient.'
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                'I like to write code and lift weights. Passionate about Bitcoin. Markets are efficient.'
+	              )
 	            )
-	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 })
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          { className: 'show-grid' },
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 1, md: 2 }),
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 5, md: 4 }),
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 5, md: 4 }),
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 4 })
+	          )
 	        )
 	      );
 	    }
@@ -46299,6 +46287,25 @@
 
 /***/ },
 /* 492 */
+/*!********************************************!*\
+  !*** ./src/client/app/pages/bio/style.jsx ***!
+  \********************************************/
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	var jumboStyle = {
+	    backgroundColor: 'white',
+	    borderRadius: 12,
+	    color: 'black',
+	    marginBottom: 0,
+	    padding: 30,
+	    opacity: 0.95,
+	    right: 20
+	};
+
+/***/ },
+/* 493 */
 /*!*****************************************!*\
   !*** ./src/client/app/pages/skills.jsx ***!
   \*****************************************/
@@ -46491,7 +46498,7 @@
 	exports.default = SkillSetBox;
 
 /***/ },
-/* 493 */
+/* 494 */
 /*!********************************************!*\
   !*** ./src/client/app/pages/contactme.jsx ***!
   \********************************************/
