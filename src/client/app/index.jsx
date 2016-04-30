@@ -5,6 +5,7 @@ import { Router, Route, Link, IndexRoute, hashHistory } from 'react-router';
 import NavBar from './pages/navbar.jsx';
 import Bio from './pages/bio/bio.jsx';
 import SkillSetBox from './pages/skills.jsx';
+import FooterR from './pages/footer.jsx';
 
 
 
@@ -25,6 +26,7 @@ class App extends React.Component {
         <NavBar />
         <Bio />
         <SkillSetBox skill={TECH_USED} />
+        <FooterR />
       </div>
   );
  }
