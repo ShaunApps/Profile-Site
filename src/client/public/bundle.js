@@ -46296,7 +46296,19 @@
 	                _react2.default.createElement(
 	                  'p',
 	                  null,
-	                  'I like to write code and lift weights. Passionate about Bitcoin. Markets are efficient.'
+	                  'Bitcoin enthusiast and aspiring software developer. I\'m a lead organizer of the ',
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://www.meetup.com/Bitcoin-of-South-Florida/' },
+	                    'South Florida Bitcoin group'
+	                  ),
+	                  ' and a recent ',
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'https://wyncode.co/' },
+	                    'Wyncode'
+	                  ),
+	                  ' grad. I enjoy tech, economics, finance, public speaking, and weightlifting. My background is in IT Recruitment and Staffing.'
 	                )
 	              )
 	            )
@@ -46353,6 +46365,12 @@
 	
 	var TECH_USED = [{ name: 'Javascript', image: '' }, { name: 'Node.js', image: '' }, { name: 'React.js', image: '' }, { name: 'Ruby', image: '' }, { name: 'Rails', image: '' }, { name: 'HTML', image: '' }, { name: 'CSS', image: '' }];
 	
+	var tableStyle = {
+	  marginTop: 50,
+	  marginLeft: 30,
+	  marginRight: 30
+	};
+	
 	// turns the prop into table elements with name and image
 	
 	var SkillSetRow = function (_React$Component) {
@@ -46405,104 +46423,99 @@
 	        _reactBootstrap.Grid,
 	        null,
 	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          { className: 'show-grid' },
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 6, md: 4 }),
+	          _reactBootstrap.Table,
+	          { responsive: true, condensed: true, style: tableStyle },
 	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 6, md: 4 },
+	            'thead',
+	            null,
 	            _react2.default.createElement(
-	              'h2',
+	              'tr',
 	              null,
-	              'Skills'
+	              _react2.default.createElement(
+	                'th',
+	                null,
+	                _react2.default.createElement(
+	                  'h2',
+	                  null,
+	                  'Programming Skillset'
+	                )
+	              )
 	            )
 	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 4 })
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          { className: 'show-grid' },
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 2, md: 2 }),
 	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 6, md: 3 },
-	            'Javascript'
-	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 }),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 6, md: 3 },
-	            _react2.default.createElement('img', { src: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png', height: '100', width: '100' })
-	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 })
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          { className: 'show-grid' },
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 2, md: 2 }),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 6, md: 3 },
-	            'Node.js'
-	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 }),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 6, md: 3 },
-	            _react2.default.createElement('img', { src: 'https://node-os.com/images/nodejs.png', height: '100', width: '100' })
-	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 })
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          { className: 'show-grid' },
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 2, md: 2 }),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 6, md: 3 },
-	            'React.js'
-	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 }),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 6, md: 3 },
-	            _react2.default.createElement('img', { src: 'https://facebook.github.io/react/img/logo_og.png', height: '100', width: '100' })
-	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 })
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          { className: 'show-grid' },
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 2, md: 2 }),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 6, md: 3 },
-	            'Ruby'
-	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 }),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 6, md: 3 },
-	            _react2.default.createElement('img', { src: 'http://budiirawan.com/wp-content/uploads/2015/04/ruby-logo.png', height: '100', width: '100' })
-	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 })
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          { className: 'show-grid' },
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 2, md: 2 }),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 6, md: 3 },
-	            'HTML & CSS'
-	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 }),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 6, md: 3 },
-	            _react2.default.createElement('img', { src: 'http://www.itbaloch.com/wp-content/uploads/2015/06/html-css.jpg', height: '75', width: '100' })
-	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 })
+	            'tbody',
+	            null,
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                'Javascript'
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement('img', { src: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png', height: '35', width: '35' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                'Node.js'
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement('img', { src: 'https://node-os.com/images/nodejs.png', height: '35', width: '35' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                'React.js'
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement('img', { src: 'https://facebook.github.io/react/img/logo_og.png', height: '35', width: '35' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                'Ruby'
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement('img', { src: 'http://budiirawan.com/wp-content/uploads/2015/04/ruby-logo.png', height: '35', width: '35' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                'Rails'
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement('img', { src: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Ruby_on_Rails.svg/791px-Ruby_on_Rails.svg.png', height: '35', width: '35' })
+	              )
+	            )
+	          )
 	        )
 	      );
 	    }
