@@ -46237,6 +46237,23 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
+	var jumboStyle = {
+	  backgroundColor: 'white',
+	  borderRadius: 12,
+	  color: 'black',
+	  marginBottom: 0,
+	  padding: 30,
+	  opacity: 0.95,
+	  right: 20
+	};
+	
+	var imageUrl = '/Users/ShaunApppelbaum-MTA/Desktop/ReactJs/react-profile/assets/dzcode.png';
+	
+	var headerStyle = {
+	  height: 350,
+	  backgroundImage: 'url(' + imageUrl + ')'
+	};
+	
 	// this Component renders my bio
 	
 	var Bio = function (_React$Component) {
@@ -46252,26 +46269,30 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
+	        'header',
+	        { style: headerStyle },
 	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          { className: 'show-grid' },
+	          _reactBootstrap.Grid,
+	          null,
 	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { md: 4 },
-	            _react2.default.createElement(_reactBootstrap.Image, { src: '/Users/ShaunApppelbaum-MTA/Desktop/ReactJs/react-profile/assets/Shaun_profile pic.jpg', width: '285', height: '250', rounded: true })
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { style: _style2.default.jumboStyle, md: 8 },
+	            _reactBootstrap.Row,
+	            { className: 'show-grid' },
 	            _react2.default.createElement(
-	              _reactBootstrap.Jumbotron,
-	              null,
+	              _reactBootstrap.Col,
+	              { md: 4 },
+	              _react2.default.createElement(_reactBootstrap.Image, { src: '/Users/ShaunApppelbaum-MTA/Desktop/ReactJs/react-profile/assets/Shaun_profile pic.jpg', width: '285', height: '250', rounded: true })
+	            ),
+	            _react2.default.createElement(
+	              _reactBootstrap.Col,
+	              { md: 8 },
 	              _react2.default.createElement(
-	                'p',
-	                null,
-	                'I like to write code and lift weights. Passionate about Bitcoin. Markets are efficient.'
+	                _reactBootstrap.Jumbotron,
+	                { style: jumboStyle },
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'I like to write code and lift weights. Passionate about Bitcoin. Markets are efficient.'
+	                )
 	              )
 	            )
 	          )
