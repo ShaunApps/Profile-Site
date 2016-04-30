@@ -1,13 +1,13 @@
 
 import React from 'react';
 import {render} from 'react-dom';
-import { Nav, NavItem, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, NavItem, Navbar, NavDropdown, Glyphicon } from 'react-bootstrap';
 
 // this should be the navbar, still working on formatting this
 export default class NavBar extends React.Component {
   render() {
     return (
-      <Navbar inverse>
+      <Navbar fixedTop>
       <Navbar.Header>
         <Navbar.Brand>
           <a href="#">Shaun Appelbaum</a>
@@ -16,9 +16,9 @@ export default class NavBar extends React.Component {
       </Navbar.Header>
       <Navbar.Collapse>
         <Nav pullRight>
-          <NavItem eventKey={1} href="#">About</NavItem>
-          <NavItem eventKey={2} href="#">Blog</NavItem>
-          <NavItem eventKey={3} href="#">Contact</NavItem>
+          <NavItem href="https://github.com/ShaunApps">Github</NavItem>
+          <NavItem href="https://linkedin.com/in/shaunappelbaum">LinkedIn</NavItem>
+          <NavItem href="https://twitter.com/shaunappelbaum">Twitter</NavItem>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

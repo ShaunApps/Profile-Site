@@ -5,7 +5,6 @@ import { Router, Route, Link, IndexRoute, hashHistory } from 'react-router';
 import NavBar from './pages/navbar.jsx';
 import Bio from './pages/bio/bio.jsx';
 import SkillSetBox from './pages/skills.jsx';
-import Contactme from './pages/contactme.jsx';
 
 
 // main component
@@ -16,7 +15,6 @@ class App extends React.Component {
         <NavBar />
         <Bio />
         <SkillSetBox />
-        <Contactme />
       </div>
   );
  }

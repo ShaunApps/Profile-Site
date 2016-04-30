@@ -73,10 +73,6 @@
 	
 	var _skills2 = _interopRequireDefault(_skills);
 	
-	var _contactme = __webpack_require__(/*! ./pages/contactme.jsx */ 494);
-	
-	var _contactme2 = _interopRequireDefault(_contactme);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -104,8 +100,7 @@
 	        null,
 	        _react2.default.createElement(_navbar2.default, null),
 	        _react2.default.createElement(_bio2.default, null),
-	        _react2.default.createElement(_skills2.default, null),
-	        _react2.default.createElement(_contactme2.default, null)
+	        _react2.default.createElement(_skills2.default, null)
 	      );
 	    }
 	  }]);
@@ -46155,7 +46150,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        _reactBootstrap.Navbar,
-	        { inverse: true },
+	        { fixedTop: true },
 	        _react2.default.createElement(
 	          _reactBootstrap.Navbar.Header,
 	          null,
@@ -46178,18 +46173,18 @@
 	            { pullRight: true },
 	            _react2.default.createElement(
 	              _reactBootstrap.NavItem,
-	              { eventKey: 1, href: '#' },
-	              'About'
+	              { href: 'https://github.com/ShaunApps' },
+	              'Github'
 	            ),
 	            _react2.default.createElement(
 	              _reactBootstrap.NavItem,
-	              { eventKey: 2, href: '#' },
-	              'Blog'
+	              { href: 'https://linkedin.com/in/shaunappelbaum' },
+	              'LinkedIn'
 	            ),
 	            _react2.default.createElement(
 	              _reactBootstrap.NavItem,
-	              { eventKey: 3, href: '#' },
-	              'Contact'
+	              { href: 'https://twitter.com/shaunappelbaum' },
+	              'Twitter'
 	            )
 	          )
 	        )
@@ -46239,8 +46234,9 @@
 	
 	var jumboStyle = {
 	  backgroundColor: 'white',
+	  border: 'solid',
+	  borderColor: 'black',
 	  borderRadius: 12,
-	  color: 'black',
 	  marginBottom: 0,
 	  padding: 30,
 	  opacity: 0.95,
@@ -46250,8 +46246,17 @@
 	var imageUrl = '/Users/ShaunApppelbaum-MTA/Desktop/ReactJs/react-profile/assets/dzcode.png';
 	
 	var headerStyle = {
-	  height: 350,
+	  height: 425,
 	  backgroundImage: 'url(' + imageUrl + ')'
+	};
+	
+	var bioRowStyle = {
+	  paddingTop: 100
+	};
+	
+	var bioPicStyle = {
+	  border: 'solid',
+	  borderColor: 'grey'
 	};
 	
 	// this Component renders my bio
@@ -46276,11 +46281,11 @@
 	          null,
 	          _react2.default.createElement(
 	            _reactBootstrap.Row,
-	            { className: 'show-grid' },
+	            { className: 'show-grid', style: bioRowStyle },
 	            _react2.default.createElement(
 	              _reactBootstrap.Col,
 	              { md: 4 },
-	              _react2.default.createElement(_reactBootstrap.Image, { src: '/Users/ShaunApppelbaum-MTA/Desktop/ReactJs/react-profile/assets/Shaun_profile pic.jpg', width: '285', height: '250', rounded: true })
+	              _react2.default.createElement(_reactBootstrap.Image, { style: bioPicStyle, src: '/Users/ShaunApppelbaum-MTA/Desktop/ReactJs/react-profile/assets/Shaun_profile pic.jpg', width: '275', height: '250', circle: true, rounded: true })
 	            ),
 	            _react2.default.createElement(
 	              _reactBootstrap.Col,
@@ -46313,17 +46318,7 @@
   \********************************************/
 /***/ function(module, exports) {
 
-	'use strict';
-	
-	var jumboStyle = {
-	    backgroundColor: 'white',
-	    borderRadius: 12,
-	    color: 'black',
-	    marginBottom: 0,
-	    padding: 30,
-	    opacity: 0.95,
-	    right: 20
-	};
+	"use strict";
 
 /***/ },
 /* 493 */
@@ -46517,93 +46512,6 @@
 	}(_react2.default.Component);
 	
 	exports.default = SkillSetBox;
-
-/***/ },
-/* 494 */
-/*!********************************************!*\
-  !*** ./src/client/app/pages/contactme.jsx ***!
-  \********************************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(/*! react */ 1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactDom = __webpack_require__(/*! react-dom */ 32);
-	
-	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 166);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Contactme = function (_React$Component) {
-	  _inherits(Contactme, _React$Component);
-	
-	  function Contactme() {
-	    _classCallCheck(this, Contactme);
-	
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Contactme).apply(this, arguments));
-	  }
-	
-	  _createClass(Contactme, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        _reactBootstrap.Grid,
-	        null,
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          { className: 'show-grid' },
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 1, md: 3 }),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 2, md: 2 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://github.com/ShaunApps' },
-	              _react2.default.createElement('img', { src: 'https://assets-cdn.github.com/images/modules/open_graph/github-mark.png', width: '140', height: '80\\' })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 2, md: 2 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://twitter.com/shaunappelbaum' },
-	              _react2.default.createElement('img', { src: 'https://pbs.twimg.com/profile_images/666407537084796928/YBGgi9BO.png', width: '125', height: '100' })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 2, md: 2 },
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://linkedin.com/in/shaunappelbaum' },
-	              _react2.default.createElement('img', { src: 'https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=w300', width: '100', height: '75' })
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Contactme;
-	}(_react2.default.Component);
-	
-	exports.default = Contactme;
 
 /***/ }
 /******/ ]);
