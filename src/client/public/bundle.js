@@ -46376,94 +46376,107 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'table',
-	        { 'class': 'table-responsive', colSpan: '12' },
+	        _reactBootstrap.Grid,
+	        null,
 	        _react2.default.createElement(
-	          'thead',
-	          null,
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2.default.createElement(_reactBootstrap.Col, { xs: 6, md: 4 }),
 	          _react2.default.createElement(
-	            'tr',
-	            null,
+	            _reactBootstrap.Col,
+	            { xs: 6, md: 4 },
 	            _react2.default.createElement(
-	              'th',
+	              'h2',
 	              null,
 	              'Skills'
 	            )
-	          )
+	          ),
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 4 })
 	        ),
 	        _react2.default.createElement(
-	          'tbody',
-	          null,
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2.default.createElement(_reactBootstrap.Col, { xs: 2, md: 2 }),
 	          _react2.default.createElement(
-	            'tr',
-	            null,
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              'Javascript'
-	            ),
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              _react2.default.createElement('img', { src: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png', height: '100', width: '100' })
-	            )
+	            _reactBootstrap.Col,
+	            { xs: 6, md: 3 },
+	            'Javascript'
 	          ),
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 }),
 	          _react2.default.createElement(
-	            'tr',
-	            null,
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              'Node.js'
-	            ),
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              _react2.default.createElement('img', { src: 'https://node-os.com/images/nodejs.png', height: '100', width: '100' })
-	            )
+	            _reactBootstrap.Col,
+	            { xs: 6, md: 3 },
+	            _react2.default.createElement('img', { src: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png', height: '100', width: '100' })
 	          ),
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 })
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2.default.createElement(_reactBootstrap.Col, { xs: 2, md: 2 }),
 	          _react2.default.createElement(
-	            'tr',
-	            null,
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              'React.js'
-	            ),
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              _react2.default.createElement('img', { src: 'https://facebook.github.io/react/img/logo_og.png', height: '100', width: '100' })
-	            )
+	            _reactBootstrap.Col,
+	            { xs: 6, md: 3 },
+	            'Node.js'
 	          ),
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 }),
 	          _react2.default.createElement(
-	            'tr',
-	            null,
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              'Ruby'
-	            ),
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              _react2.default.createElement('img', { src: 'http://budiirawan.com/wp-content/uploads/2015/04/ruby-logo.png', height: '100', width: '100' })
-	            )
+	            _reactBootstrap.Col,
+	            { xs: 6, md: 3 },
+	            _react2.default.createElement('img', { src: 'https://node-os.com/images/nodejs.png', height: '100', width: '100' })
 	          ),
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 })
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2.default.createElement(_reactBootstrap.Col, { xs: 2, md: 2 }),
 	          _react2.default.createElement(
-	            'tr',
-	            null,
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              'HTML & CSS'
-	            ),
-	            _react2.default.createElement(
-	              'td',
-	              { colSpan: '4' },
-	              _react2.default.createElement('img', { src: 'http://www.itbaloch.com/wp-content/uploads/2015/06/html-css.jpg', height: '75', width: '100' })
-	            )
-	          )
+	            _reactBootstrap.Col,
+	            { xs: 6, md: 3 },
+	            'React.js'
+	          ),
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 }),
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { xs: 6, md: 3 },
+	            _react2.default.createElement('img', { src: 'https://facebook.github.io/react/img/logo_og.png', height: '100', width: '100' })
+	          ),
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 })
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2.default.createElement(_reactBootstrap.Col, { xs: 2, md: 2 }),
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { xs: 6, md: 3 },
+	            'Ruby'
+	          ),
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 }),
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { xs: 6, md: 3 },
+	            _react2.default.createElement('img', { src: 'http://budiirawan.com/wp-content/uploads/2015/04/ruby-logo.png', height: '100', width: '100' })
+	          ),
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 })
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2.default.createElement(_reactBootstrap.Col, { xs: 2, md: 2 }),
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { xs: 6, md: 3 },
+	            'HTML & CSS'
+	          ),
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 }),
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { xs: 6, md: 3 },
+	            _react2.default.createElement('img', { src: 'http://www.itbaloch.com/wp-content/uploads/2015/06/html-css.jpg', height: '75', width: '100' })
+	          ),
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 })
 	        )
 	      );
 	    }
