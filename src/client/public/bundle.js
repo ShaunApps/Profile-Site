@@ -81,6 +81,8 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
+	var TECH_USED = [{ name: 'Javascript', image: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png' }, { name: 'Node.js', image: 'https://node-os.com/images/nodejs.png' }, { name: 'React.js', image: 'https://facebook.github.io/react/img/logo_og.png' }, { name: 'Ruby', image: 'http://budiirawan.com/wp-content/uploads/2015/04/ruby-logo.png' }, { name: 'Rails', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Ruby_on_Rails.svg/791px-Ruby_on_Rails.svg.png' }];
+	
 	// main component
 	
 	var App = function (_React$Component) {
@@ -100,7 +102,7 @@
 	        null,
 	        _react2.default.createElement(_navbar2.default, null),
 	        _react2.default.createElement(_bio2.default, null),
-	        _react2.default.createElement(_skills2.default, null)
+	        _react2.default.createElement(_skills2.default, { skill: TECH_USED })
 	      );
 	    }
 	  }]);
@@ -46363,8 +46365,6 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	var TECH_USED = [{ name: 'Javascript', image: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png' }, { name: 'Node.js', image: 'https://node-os.com/images/nodejs.png' }, { name: 'React.js', image: 'https://facebook.github.io/react/img/logo_og.png' }, { name: 'Ruby', image: 'http://budiirawan.com/wp-content/uploads/2015/04/ruby-logo.png' }, { name: 'Rails', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Ruby_on_Rails.svg/791px-Ruby_on_Rails.svg.png' }];
-	
 	var tableStyle = {
 	  marginTop: 50,
 	  marginLeft: 30,
@@ -46419,6 +46419,10 @@
 	  _createClass(SkillSetBox, [{
 	    key: 'render',
 	    value: function render() {
+	      var rows = [];
+	      this.props.skill.forEach(function (skill) {
+	        rows.push(_react2.default.createElement(SkillSetRow, { skill: skill }));
+	      });
 	      return _react2.default.createElement(
 	        _reactBootstrap.Grid,
 	        null,
@@ -46445,76 +46449,7 @@
 	          _react2.default.createElement(
 	            'tbody',
 	            null,
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                'Javascript'
-	              ),
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                _react2.default.createElement('img', { src: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png', height: '35', width: '35' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                'Node.js'
-	              ),
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                _react2.default.createElement('img', { src: 'https://node-os.com/images/nodejs.png', height: '35', width: '35' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                'React.js'
-	              ),
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                _react2.default.createElement('img', { src: 'https://facebook.github.io/react/img/logo_og.png', height: '35', width: '35' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                'Ruby'
-	              ),
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                _react2.default.createElement('img', { src: 'http://budiirawan.com/wp-content/uploads/2015/04/ruby-logo.png', height: '35', width: '35' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                'Rails'
-	              ),
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                _react2.default.createElement('img', { src: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Ruby_on_Rails.svg/791px-Ruby_on_Rails.svg.png', height: '35', width: '35' })
-	              )
-	            )
+	            rows
 	          )
 	        )
 	      );
