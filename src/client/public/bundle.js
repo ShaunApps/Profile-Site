@@ -46253,25 +46253,20 @@
 	        _react2.default.createElement(
 	          _reactBootstrap.Row,
 	          { className: 'show-grid' },
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 6, md: 4 }),
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 }),
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { xs: 6, md: 4 },
+	            _react2.default.createElement(_reactBootstrap.Image, { src: '/Users/ShaunApppelbaum-MTA/Desktop/ReactJs/react-profile/assets/Shaun_profile pic.jpg', width: '275', height: '250', rounded: true })
+	          ),
 	          _react2.default.createElement(
 	            _reactBootstrap.Col,
 	            { xs: 6, md: 4 },
 	            _react2.default.createElement(
-	              'h1',
+	              'h3',
 	              null,
 	              'Shaun Appelbaum'
-	            )
-	          ),
-	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 4 })
-	        ),
-	        _react2.default.createElement(
-	          _reactBootstrap.Row,
-	          { className: 'show-grid' },
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 6, md: 4 }),
-	          _react2.default.createElement(
-	            _reactBootstrap.Col,
-	            { xs: 6, md: 4 },
+	            ),
 	            _react2.default.createElement(
 	              'p',
 	              null,
@@ -46283,6 +46278,14 @@
 	              'Passionate about Bitcoin. Markets are efficient.'
 	            )
 	          ),
+	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 2 })
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Row,
+	          { className: 'show-grid' },
+	          _react2.default.createElement(_reactBootstrap.Col, { xs: 1, md: 2 }),
+	          _react2.default.createElement(_reactBootstrap.Col, { xs: 5, md: 4 }),
+	          _react2.default.createElement(_reactBootstrap.Col, { xs: 5, md: 4 }),
 	          _react2.default.createElement(_reactBootstrap.Col, { xsHidden: true, md: 4 })
 	        )
 	      );
@@ -46536,7 +46539,7 @@
 	        _react2.default.createElement(
 	          _reactBootstrap.Row,
 	          { className: 'show-grid' },
-	          _react2.default.createElement(_reactBootstrap.Col, { xs: 5, md: 3 }),
+	          _react2.default.createElement(_reactBootstrap.Col, { xs: 1, md: 3 }),
 	          _react2.default.createElement(
 	            _reactBootstrap.Col,
 	            { xs: 2, md: 2 },

@@ -7,7 +7,7 @@ export default class Contactme extends React.Component {
     return (
       <Grid>
         <Row className="show-grid">
-          <Col xs={5} md={3}></Col>
+          <Col xs={1} md={3}></Col>
           <Col xs={2} md={2}>
             <a href="https://github.com/ShaunApps">
               <img src="https://assets-cdn.github.com/images/modules/open_graph/github-mark.png" width="140" height="80\" />

@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-import { Row, Col, colSpan, Grid, } from 'react-bootstrap';
+import { Row, Col, colSpan, Grid, Label } from 'react-bootstrap';
 
 const TECH_USED = [
   { name: 'Javascript', image: ''},
