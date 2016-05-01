@@ -77,6 +77,10 @@
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
+	var _bitcoininfo = __webpack_require__(/*! ./pages/bitcoin/bitcoininfo.jsx */ 495);
+	
+	var _bitcoininfo2 = _interopRequireDefault(_bitcoininfo);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -107,6 +111,7 @@
 	        _react2.default.createElement(_navbar2.default, null),
 	        _react2.default.createElement(_bio2.default, null),
 	        _react2.default.createElement(_skills2.default, { skill: TECH_USED }),
+	        _react2.default.createElement(_bitcoininfo2.default, null),
 	        _react2.default.createElement(_footer2.default, null)
 	      );
 	    }
@@ -46543,6 +46548,120 @@
 	}(_react2.default.Component);
 	
 	exports.default = FooterR;
+
+/***/ },
+/* 495 */
+/*!******************************************************!*\
+  !*** ./src/client/app/pages/bitcoin/bitcoininfo.jsx ***!
+  \******************************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(/*! react-dom */ 32);
+	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 166);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var gridStyle = {
+	  paddingTop: 50
+	};
+	
+	var BitcoinInfo = function (_React$Component) {
+	  _inherits(BitcoinInfo, _React$Component);
+	
+	  function BitcoinInfo() {
+	    _classCallCheck(this, BitcoinInfo);
+	
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(BitcoinInfo).apply(this, arguments));
+	  }
+	
+	  _createClass(BitcoinInfo, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        _reactBootstrap.Grid,
+	        { style: gridStyle },
+	        _react2.default.createElement(
+	          _reactBootstrap.Row,
+	          null,
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { xs: 12, md: 8 },
+	            _react2.default.createElement(
+	              'h2',
+	              null,
+	              'Bitcoin'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Interested in Bitcoin? This section is for you!'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Row,
+	          null,
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { xs: 12, md: 8 },
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'If you haven\'t read the original Bitcoin whitepaper yet, you must! You can find it ',
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://bitcoin.org/bitcoin.pdf' },
+	                'here.'
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _reactBootstrap.Row,
+	          null,
+	          _react2.default.createElement(
+	            _reactBootstrap.Col,
+	            { xs: 12, md: 8 },
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              'Next, you should read ',
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://www.reddit.com/r/Bitcoin/comments/3qdvt7/hey_everyone_ive_written_what_i_believe_to_be_the/' },
+	                ' this whitepaper'
+	              ),
+	              '. You may understand some of it, all of it, or none at all. It is the best allegorical story of the journey every Bitcoiner must take.'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	
+	  return BitcoinInfo;
+	}(_react2.default.Component);
+	
+	exports.default = BitcoinInfo;
 
 /***/ }
 /******/ ]);
