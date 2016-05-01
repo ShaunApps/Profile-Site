@@ -3,7 +3,8 @@ import {render} from 'react-dom';
 import { Col, Grid, Panel, Row, Footer } from 'react-bootstrap';
 
 var styleFooter = {
-  marginTop: 100
+  marginTop: 100,
+  marginBottom: 19
 }
 
 export default class FooterR extends React.Component {

@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-import { Row, Col, colSpan, Table, Label, Grid } from 'react-bootstrap';
+import { Row, Col, colSpan, Table, Label, Grid, ProgressBar } from 'react-bootstrap';
 
 
 
@@ -15,8 +15,9 @@ class SkillSetRow extends React.Component {
   render() {
     return (
       <tr>
-        <td>{this.props.skill.name}</td>
-        <td><img src={this.props.skill.image} height='35' width='35' /></td>
+        <td className="col-md-2"><h5>{this.props.skill.name}</h5></td>
+        <td className="col-md-3"><img src={this.props.skill.image} height='50' width='50' /></td>
+        <td className="col-md-5"><ProgressBar bsStyle="info" now={this.props.skill.exp} /></td>
       </tr>
     );
   }
@@ -30,10 +31,10 @@ export default class SkillSetBox extends React.Component {
     });
     return (
       <Grid>
-        <Table responsive condensed style={tableStyle}>
+        <Table className="col-lg-12" responsive condensed style={tableStyle}>
           <thead>
             <tr>
-              <th><h2>Programming Skillset</h2></th>
+              <th><h2>Programming Skills</h2></th>
             </tr>
           </thead>
           <tbody>{ rows }</tbody>

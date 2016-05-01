@@ -10,11 +10,11 @@ import FooterR from './pages/footer.jsx';
 
 
 var TECH_USED = [
-  { name: 'Javascript', image: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png'},
-  { name: 'Node.js', image: 'https://node-os.com/images/nodejs.png'},
-  { name: 'React.js', image: 'https://facebook.github.io/react/img/logo_og.png'},
-  { name: 'Ruby', image: 'http://budiirawan.com/wp-content/uploads/2015/04/ruby-logo.png'},
-  { name: 'Rails', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Ruby_on_Rails.svg/791px-Ruby_on_Rails.svg.png'}
+  { name: 'Javascript', exp: '70', image: 'http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png'},
+  { name: 'Node.js', exp: '50', image: 'https://node-os.com/images/nodejs.png'},
+  { name: 'React.js', exp: '35', image: 'https://facebook.github.io/react/img/logo_og.png'},
+  { name: 'Ruby', exp: '65', image: 'http://budiirawan.com/wp-content/uploads/2015/04/ruby-logo.png'},
+  { name: 'Rails', exp: '65', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Ruby_on_Rails.svg/791px-Ruby_on_Rails.svg.png'}
 ];
 
 
