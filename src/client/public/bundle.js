@@ -46157,7 +46157,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        _reactBootstrap.Navbar,
-	        { fixedTop: true },
+	        { fixedTop: true, inverse: true },
 	        _react2.default.createElement(
 	          _reactBootstrap.Navbar.Header,
 	          null,
@@ -46181,17 +46181,17 @@
 	            _react2.default.createElement(
 	              _reactBootstrap.NavItem,
 	              { href: 'https://github.com/ShaunApps' },
-	              'Github'
+	              _react2.default.createElement('i', { className: 'fa fa-2x fa-github' })
 	            ),
 	            _react2.default.createElement(
 	              _reactBootstrap.NavItem,
 	              { href: 'https://linkedin.com/in/shaunappelbaum' },
-	              'LinkedIn'
+	              _react2.default.createElement('i', { className: 'fa fa-2x fa-linkedin' })
 	            ),
 	            _react2.default.createElement(
 	              _reactBootstrap.NavItem,
 	              { href: 'https://twitter.com/shaunappelbaum' },
-	              'Twitter'
+	              _react2.default.createElement('i', { className: 'fa fa-2x fa-twitter' })
 	            )
 	          )
 	        )
@@ -46250,10 +46250,10 @@
 	  right: 20
 	};
 	
-	var imageUrl = '/Users/ShaunApppelbaum-MTA/Desktop/ReactJs/react-profile/assets/dzcode.png';
+	var imageUrl = '/Users/ShaunApppelbaum-MTA/Desktop/ReactJs/react-profile/assets/dzcode2.png';
 	
 	var headerStyle = {
-	  height: 425,
+	  height: 400,
 	  backgroundImage: 'url(' + imageUrl + ')'
 	};
 	
@@ -46263,7 +46263,7 @@
 	
 	var bioPicStyle = {
 	  border: 'solid',
-	  borderColor: 'grey'
+	  borderColor: 'black'
 	};
 	
 	// this Component renders my bio

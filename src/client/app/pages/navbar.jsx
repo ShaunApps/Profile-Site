@@ -7,7 +7,7 @@ import { Nav, NavItem, Navbar, NavDropdown, Glyphicon } from 'react-bootstrap';
 export default class NavBar extends React.Component {
   render() {
     return (
-      <Navbar fixedTop>
+      <Navbar fixedTop inverse>
       <Navbar.Header>
         <Navbar.Brand>
           <a href="/">Shaun Appelbaum</a>
@@ -16,9 +16,9 @@ export default class NavBar extends React.Component {
       </Navbar.Header>
       <Navbar.Collapse>
         <Nav pullRight>
-          <NavItem href="https://github.com/ShaunApps">Github</NavItem>
-          <NavItem href="https://linkedin.com/in/shaunappelbaum">LinkedIn</NavItem>
-          <NavItem href="https://twitter.com/shaunappelbaum">Twitter</NavItem>
+          <NavItem href="https://github.com/ShaunApps"><i className="fa fa-2x fa-github"></i></NavItem>
+          <NavItem href="https://linkedin.com/in/shaunappelbaum"><i className="fa fa-2x fa-linkedin"></i></NavItem>
+          <NavItem href="https://twitter.com/shaunappelbaum"><i className="fa fa-2x fa-twitter"></i></NavItem>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

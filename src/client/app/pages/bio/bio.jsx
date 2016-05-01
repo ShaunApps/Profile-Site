@@ -15,10 +15,10 @@ var jumboStyle = {
     right: 20
 };
 
-var imageUrl = '/Users/ShaunApppelbaum-MTA/Desktop/ReactJs/react-profile/assets/dzcode.png';
+var imageUrl = '/Users/ShaunApppelbaum-MTA/Desktop/ReactJs/react-profile/assets/dzcode2.png';
 
 var headerStyle = {
-  height: 425,
+  height: 400,
   backgroundImage: 'url(' + imageUrl + ')'
 };
 
@@ -28,7 +28,7 @@ var bioRowStyle = {
 
 var bioPicStyle = {
   border: 'solid',
-  borderColor: 'grey'
+  borderColor: 'black'
 }
 
 // this Component renders my bio

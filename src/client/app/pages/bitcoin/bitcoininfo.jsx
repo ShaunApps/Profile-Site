@@ -8,7 +8,7 @@ export default class BitcoinInfo extends React.Component {
   render() {
     return (
       <Grid>
-      
+        
       </Grid>
 
     )
