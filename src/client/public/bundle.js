@@ -46315,7 +46315,7 @@
 	                    { href: 'https://wyncode.co/' },
 	                    'Wyncode'
 	                  ),
-	                  ' grad. I enjoy tech, economics, finance, public speaking, and weightlifting. My background is in IT Recruitment and Staffing.'
+	                  ' graduate. I enjoy tech, economics, finance, public speaking, and weightlifting. My background is in IT Recruitment and Staffing.'
 	                )
 	              )
 	            )

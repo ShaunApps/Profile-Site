@@ -44,7 +44,7 @@ export default class Bio extends React.Component {
               <Col  md={8}>
                 <Jumbotron style={jumboStyle}>
                   <p>Bitcoin enthusiast and aspiring software developer.
-                      I'm a lead organizer of the <a href="http://www.meetup.com/Bitcoin-of-South-Florida/">South Florida Bitcoin group</a> and a recent <a href="https://wyncode.co/">Wyncode</a> grad.
+                      I'm a lead organizer of the <a href="http://www.meetup.com/Bitcoin-of-South-Florida/">South Florida Bitcoin group</a> and a recent <a href="https://wyncode.co/">Wyncode</a> graduate.
                       I enjoy tech, economics, finance, public speaking, and weightlifting. My background is in IT Recruitment and Staffing.
                   </p>
                 </Jumbotron>
