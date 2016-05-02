@@ -111,7 +111,6 @@
 	        _react2.default.createElement(_navbar2.default, null),
 	        _react2.default.createElement(_bio2.default, null),
 	        _react2.default.createElement(_skills2.default, { skill: TECH_USED }),
-	        _react2.default.createElement(_bitcoininfo2.default, null),
 	        _react2.default.createElement(_footer2.default, null)
 	      );
 	    }
@@ -46581,7 +46580,9 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var gridStyle = {
-	  paddingTop: 50
+	  marginTop: 75,
+	  marginBotton: 50
+	
 	};
 	
 	var BitcoinInfo = function (_React$Component) {
@@ -46601,10 +46602,10 @@
 	        { style: gridStyle },
 	        _react2.default.createElement(
 	          _reactBootstrap.Row,
-	          null,
+	          { className: 'col-lg-11' },
 	          _react2.default.createElement(
 	            _reactBootstrap.Col,
-	            { xs: 12, md: 8 },
+	            null,
 	            _react2.default.createElement(
 	              'h2',
 	              null,
@@ -46619,10 +46620,10 @@
 	        ),
 	        _react2.default.createElement(
 	          _reactBootstrap.Row,
-	          null,
+	          { className: 'col-lg-11' },
 	          _react2.default.createElement(
 	            _reactBootstrap.Col,
-	            { xs: 12, md: 8 },
+	            null,
 	            _react2.default.createElement(
 	              'p',
 	              null,
@@ -46637,10 +46638,10 @@
 	        ),
 	        _react2.default.createElement(
 	          _reactBootstrap.Row,
-	          null,
+	          { className: 'col-lg-11' },
 	          _react2.default.createElement(
 	            _reactBootstrap.Col,
-	            { xs: 12, md: 8 },
+	            null,
 	            _react2.default.createElement(
 	              'p',
 	              null,

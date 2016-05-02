@@ -27,7 +27,6 @@ class App extends React.Component {
         <NavBar />
         <Bio />
         <SkillSetBox skill={TECH_USED} />
-        <BitcoinInfo />
         <FooterR />
       </div>
   );
