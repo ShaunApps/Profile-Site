@@ -5,7 +5,6 @@ import { Row, Col, colSpan, Table, Label, Grid } from 'react-bootstrap';
 var gridStyle = {
   marginTop: 75,
   marginBotton: 50
-
 }
 
 

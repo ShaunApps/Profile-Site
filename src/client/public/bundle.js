@@ -46339,9 +46339,46 @@
 /*!********************************************!*\
   !*** ./src/client/app/pages/bio/style.jsx ***!
   \********************************************/
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(/*! react-dom */ 32);
+	
+	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 166);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var jumboStyle = {
+	  backgroundColor: 'white',
+	  border: 'solid',
+	  borderColor: 'black',
+	  borderRadius: 12,
+	  marginBottom: 0,
+	  padding: 30,
+	  opacity: 0.95,
+	  right: 20
+	};
+	
+	var imageUrl = '/Users/ShaunApppelbaum-MTA/Desktop/ReactJs/react-profile/assets/dzcode2.png';
+	
+	var headerStyle = {
+	  height: 400,
+	  backgroundImage: 'url(' + imageUrl + ')'
+	};
+	
+	var bioRowStyle = {
+	  paddingTop: 100
+	};
+	
+	var bioPicStyle = {
+	  border: 'solid',
+	  borderColor: 'black'
+	};
 
 /***/ },
 /* 493 */
@@ -46582,7 +46619,6 @@
 	var gridStyle = {
 	  marginTop: 75,
 	  marginBotton: 50
-	
 	};
 	
 	var BitcoinInfo = function (_React$Component) {
