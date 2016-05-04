@@ -39,6 +39,9 @@ export default class SkillSetBox extends React.Component {
           </thead>
           <tbody>{ rows }</tbody>
         </Table>
+        <div className="col-md-12">
+          <p>My language of choice is Javascript. I am currently learning React + Redux.</p>
+        </div>
       </Grid>
     );
   }

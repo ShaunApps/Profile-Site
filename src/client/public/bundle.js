@@ -46506,6 +46506,15 @@
 	            null,
 	            rows
 	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'col-md-12' },
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'My language of choice is Javascript. I am currently learning React + Redux.'
+	          )
 	        )
 	      );
 	    }
