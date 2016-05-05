@@ -7,7 +7,7 @@ import Bio from './pages/bio/bio.jsx';
 import SkillSetBox from './pages/skills.jsx';
 import FooterR from './pages/footer.jsx';
 import BitcoinInfo from './pages/bitcoin/bitcoininfo.jsx';
-
+import StorySection from './pages/story/story.jsx'
 
 
 var TECH_USED = [
@@ -27,6 +27,7 @@ class App extends React.Component {
         <NavBar />
         <Bio />
         <SkillSetBox skill={TECH_USED} />
+        <StorySection />
         <FooterR />
       </div>
   );
