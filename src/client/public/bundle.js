@@ -46728,6 +46728,10 @@
 	
 	var _reactBootstrap = __webpack_require__(/*! react-bootstrap */ 166);
 	
+	var _style = __webpack_require__(/*! ./style.css */ 497);
+	
+	var _style2 = _interopRequireDefault(_style);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -46749,13 +46753,19 @@
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
-	        { className: 'col-md-12' },
+	        _reactBootstrap.Row,
+	        { className: 'col-md-12', bsStyle: 'description' },
+	        _react2.default.createElement('div', { className: 'col-md-3' }),
 	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'My language of choice is Javascript. I am currently learning React + Redux.'
-	        )
+	          'div',
+	          { className: 'col-md-6' },
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'My language of choice is Javascript. I am currently learning React + Redux.'
+	          )
+	        ),
+	        _react2.default.createElement('div', { className: 'col-md-3' })
 	      );
 	    }
 	  }]);
@@ -46764,6 +46774,16 @@
 	}(_react2.default.Component);
 	
 	exports.default = StorySection;
+
+/***/ },
+/* 497 */
+/*!**********************************************!*\
+  !*** ./src/client/app/pages/story/style.css ***!
+  \**********************************************/
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"description":"style__description___3uJkr"};
 
 /***/ }
 /******/ ]);
