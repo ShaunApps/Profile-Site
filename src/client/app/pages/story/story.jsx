@@ -7,9 +7,9 @@ import styles from './style.css';
 export default class StorySection extends React.Component {
   render() {
     return (
-      <Row className="col-md-12" bsStyle="description">
+      <Row>
         <div className="col-md-3"></div>
-        <div className="col-md-6">
+        <div className={'col-md-6 '+styles.description}>
           <p>My language of choice is Javascript. I am currently learning React + Redux.</p>
         </div>
         <div className="col-md-3"></div>

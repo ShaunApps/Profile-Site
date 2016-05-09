@@ -46754,11 +46754,11 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        _reactBootstrap.Row,
-	        { className: 'col-md-12', bsStyle: 'description' },
+	        null,
 	        _react2.default.createElement('div', { className: 'col-md-3' }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'col-md-6' },
+	          { className: 'col-md-6 ' + _style2.default.description },
 	          _react2.default.createElement(
 	            'p',
 	            null,
